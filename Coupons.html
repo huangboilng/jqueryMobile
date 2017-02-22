@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DrGrab - Coupons</title>
+   <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">-->
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="_assets/css/jquery-ui.css">	
+	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+	<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="_assets/css/jquery.bxslider.css" rel="stylesheet">
+	<link href="_assets/css/MyFontsWebfontsKit.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="_assets/js/jquery.bxslider.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="jqm-demos jqm-home" data-quicklinks="true">
+
+	<div data-role="header" data-position="fixed">
+		<div class="jqm-header">
+			<h2><a href="http://www.DrGrab.com/m/"><img src="_assets/img/logo.png" alt="DrGrab"></a></h2>
+			<a href="#leftpanel" data-icon="bars" data-iconpos="notext" class="jqmnav-button jqmnav-buttontop">
+				<i class="fa fa-bars fa-lg"></i>
+			</a>
+			<a href="#" class="ui-btn-right jqmnav-button">
+				<i class="fa fa-shopping-cart fa-lg"></i>
+			</a>
+			
+			<div class="categories-nav">
+				 <div class="slide"><a href="#" class="ui-icon-carat-d ui-btn-icon-right">Shop by Category</a></div>
+				 <ul id="navslow">         
+					<li class="item new"><a href="#">New</a></li>
+					<li class="item fashion"><a href="http://www.baidu.com" style="color: #229aeb">Fashion</a></li>                            
+					<li class="item mothers-day"><a href="#" style="color: #65318a">Mother's Day</a></li>                            
+					<li class="item kids-baby"><a href="#" style="color: #f8c74a"> Kids &amp; Baby</a></li>                            
+					<li class="item street"><a href="#" style="color: #d82a2a">Streetwear</a></li>                           
+					<li class="item home"> <a href="#" style="color: #26bdac">Home </a></li>                            
+					<li class="item beauty"><a href="#" style="color: #f56390"> Beauty</a></li>                            
+					<li class="item sports"><a href="#" style="color: #49c94e">Sports</a></li>                            
+					<li class="item tech"><a href="#" style="color: #1c7dd5">Tech</a></li>                            
+					<li class="item groceries"><a href="#" style="color: #fa9146"> Groceries</a></li>  
+				  </ul>
+			</div>
+	<script>
+	//categories
+	var divClicked = false;	
+	$(document).ready(function(){
+	   $(".slide").click(function(){
+			//$("#navslow").fadeToggle("slow");
+			$("#navslow").animate({
+			   height: 'toggle', opacity: 'toggle'
+			}, 300);  
+			//$(this).toggleClass("active"); return false;
+		});
+	});
+	document.onclick = function() {
+	   if(!divClicked) {
+			$("#navslow").hide("slow");
+	   }
+	   divClicked = false;
+	};
+	</script>
+         </div>
+	</div><!-- /header -->
+
+<div role="main" class="ui-content jqm-content" data-role="content">
+	<h3 class="myordertitle">Coupons</h3>
+    <div id="Coupons">	
+		<div class="dg-main-account-content-coupon-list clearfix ui-grid-b ui-responsiave">           
+			<div class="ui-block-b">
+				<div class="jqm-block-content">
+					<div class="dg-main-account-content-coupon-percent">
+					  20% OFF
+					</div>
+					<div class="caption">
+					  <h3>HSTFM4HJR5B5</h3>
+					  <span class="text-muted">Expire on February 28, 2015</span>
+					</div>
+				</div>
+			</div>
+			<div class="ui-block-b">
+				<div class="jqm-block-content">
+					<div class="dg-main-account-content-coupon-percent">
+					  $5.0 OFF
+					</div>
+					<div class="caption">
+					  <h3>CMVW0N5QQNVU</h3>
+					  <span class="text-muted">Expire on February 28, 2015</span>
+					</div>
+				</div>
+			</div>
+			<div class="ui-block-b">
+				<div class="jqm-block-content">
+					<div class="dg-main-account-content-coupon-percent">
+					  $5.0 OFF
+					</div>
+					<div class="caption">
+					  <h3>CMVW0N5QQNVU</h3>
+					  <span class="text-muted">Expire on February 28, 2015</span>
+					</div>
+				</div>
+			</div>				
+         </div>
+	</div>  
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer"  id="jqmfooter">
+
+		<div class="ui-grid-a ui-responsive">
+        	<div class="ui-block-a">
+				<div class="jqm-block-content">
+					<a href="#"><img src="_assets/img/ads1.png" alt="Bonds Women's"></a>
+				</div>
+        	</div>
+			<div class="ui-block-a">
+				<div class="jqm-block-content">
+					<a href="#"><img src="_assets/img/ads2.png" alt="Bonds Women's"></a>
+				</div>
+        	</div>
+		</div>	
+		<div class="ui-grid-a ui-responsive" id="footerlist">
+        	<div class="ui-block-a">
+				<div class="jqm-block-content">
+        			<h3>About DrGrab</h3>
+					<p><a href="loader/index.html" data-ajax="false" class="ui-link">View Cart</a></p>
+        			<p><a href="transitions/index.html" data-ajax="false" class="ui-link">My Account</a></p>
+        			<p><a href="pages/index.html" data-ajax="false" class="ui-link">Order Status</a></p>
+        			<p><a href="navigation/index.html" data-ajax="false" class="ui-link">Shop By Brand</a></p>
+        			<p><a href="loader/index.html" data-ajax="false" class="ui-link">Trade-in Program</a></p>
+        			<p><a href="transitions/index.html" data-ajax="false" class="ui-link">Testimonial</a></p>
+        		</div>
+			</div>
+        	<div class="ui-block-a">
+				<div class="jqm-block-content">
+					<h3>About DrGrab</h3>
+					<p><a href="loader/index.html" data-ajax="false" class="ui-link">View Cart</a></p>
+        			<p><a href="transitions/index.html" data-ajax="false" class="ui-link">My Account</a></p>
+        			<p><a href="pages/index.html" data-ajax="false" class="ui-link">Order Status</a></p>
+        			<p><a href="navigation/index.html" data-ajax="false" class="ui-link">Shop By Brand</a></p>
+        			<p><a href="loader/index.html" data-ajax="false" class="ui-link">Trade-in Program</a></p>
+        			<p><a href="transitions/index.html" data-ajax="false" class="ui-link">Testimonial</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ui-grid-a ui-responsive" id="footerlogos">
+        	<div class="ui-block-b">
+				<div class="footerlogos-content">
+        			<img src="_assets/img/logos.png" />
+        		</div>
+			</div>
+        	<div class="ui-block-b">
+				<div class="footerlogos-content">
+					<p>© 2015 Copyright by DrGrab. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+		
+	</div><!-- /footer -->
+	
+	<!-- leftpanel  -->
+	<div data-role="panel" id="leftpanel" data-position="left" data-display="overlay" data-theme="a">
+		<a href="#demo-links" data-rel="close"  id="panleleftclose">
+			<i class="fa fa-times fa-lg"></i>
+		</a>
+		<ul data-role="listview"  class="ui-nodisc-icon">
+			<li><a href=".././" class="ui-btn ui-btn-icon-right">Home</a></li>
+			<li><a href="../intro/" data-ajax="false" class="ui-btn ui-btn-icon-right">Contact us</a></li>
+			<li class="panleweight">My Account</li>
+			<li><a href="../button/" data-ajax="false" class="ui-btn ui-btn-icon-right">Login</a></li>
+			<li><a href="../button/" data-ajax="false" class="ui-btn ui-btn-icon-right">Forgot Password</a></li>
+			<li><a href="../button/" data-ajax="false" class="ui-btn ui-btn-icon-right">Sign-up</a></li>
+		</ul>
+	</div>	 
+	<!-- /leftpanel -->
+	
+</div><!-- /page -->
+
+</body>
+</html>
